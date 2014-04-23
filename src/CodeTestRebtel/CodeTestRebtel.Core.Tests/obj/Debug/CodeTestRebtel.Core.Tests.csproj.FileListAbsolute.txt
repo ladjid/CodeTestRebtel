@@ -1,0 +1,5 @@
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel.Core.Tests\bin\Debug\CodeTestRebtel.Core.Tests.dll
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel.Core.Tests\bin\Debug\CodeTestRebtel.Core.Tests.pdb
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel.Core.Tests\obj\Debug\CodeTestRebtel.Core.Tests.csprojResolveAssemblyReference.cache
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel.Core.Tests\obj\Debug\CodeTestRebtel.Core.Tests.dll
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel.Core.Tests\obj\Debug\CodeTestRebtel.Core.Tests.pdb
