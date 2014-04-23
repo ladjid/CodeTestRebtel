@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestRebtel", "CodeTestRebtel\CodeTestRebtel.csproj", "{CC35AAEF-822C-4976-9BCE-FCEAF5239BA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestRebtel.Core", "CodeTestRebtel.Core\CodeTestRebtel.Core.csproj", "{BEB35664-5122-4176-BE99-E628F73A96BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestRebtel.Data", "CodeTestRebtel.Core\CodeTestRebtel.Data.csproj", "{BEB35664-5122-4176-BE99-E628F73A96BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestRebtel.Core.Tests", "CodeTestRebtel.Core.Tests\CodeTestRebtel.Core.Tests.csproj", "{6FF623EF-653A-4987-AEA2-A379A3521BD3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestRebtel.Data.Tests", "CodeTestRebtel.Core.Tests\CodeTestRebtel.Data.Tests.csproj", "{6FF623EF-653A-4987-AEA2-A379A3521BD3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestRebtel.Client.Tests", "CodeTestRebtel.Client.Tests\CodeTestRebtel.Client.Tests.csproj", "{132FE530-9181-4DBF-A129-4E96CD00406D}"
 EndProject
