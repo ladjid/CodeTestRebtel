@@ -83,3 +83,12 @@ D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\bin\zh-Hant\System
 D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\obj\Debug\CodeTestRebtel.csprojResolveAssemblyReference.cache
 D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\obj\Debug\CodeTestRebtel.dll
 D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\obj\Debug\CodeTestRebtel.pdb
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\bin\CodeTestRebtel.Data.dll
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\bin\Ninject.dll
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\bin\Ninject.Web.Common.dll
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\bin\Ninject.Web.Mvc.dll
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\bin\WebActivatorEx.dll
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\bin\CodeTestRebtel.Data.pdb
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\bin\Ninject.xml
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\bin\Ninject.Web.Common.xml
+D:\Kumo2\Git\CodeTestRebtel\src\CodeTestRebtel\CodeTestRebtel\bin\Ninject.Web.Mvc.xml
