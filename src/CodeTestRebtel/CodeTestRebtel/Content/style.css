@@ -1,2 +1,149 @@
-﻿body {
+﻿html {
+    background-color: #fff;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+body {
+    background-color: #fff;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#maincontainer {
+    width: 100%;
+    height: 100%;
+}
+
+#bookshelfcontainer {
+    width: 900px;
+    height: 100%;
+    border: 1px solid grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#booktable {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+
+    font-size: 20px;
+    color: #4682b4;
+    position: relative;
+    left: 50px;
+    text-shadow: 1px 1px 1px;
+}
+
+#modalcontainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15000;
+}
+
+#modalbg {
+    
+    background-color: Black;
+    position: absolute;
+    z-index: 15010;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+#modalcontent {
+
+    position: relative;
+    z-index: 15015;
+    width: 400px;
+    height: 250px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    top: 150px;
+    padding: 20px;
+}
+
+#listOfbooks {
+    float: left; 
+    font-size: 16px; 
+    color: #4682b4; 
+    margin-left: 50px
+}
+
+#filterinput {
+    float: right;
+    margin-right: 50px;
+}
+
+#buttoncancel {
+    float: left; 
+    position: relative; 
+    left: 40px;
+}
+
+#buttonsave {
+    float: left; 
+    position: relative; 
+    left: 50px;
+}
+
+.textstylebold {
+
+    font-size: 17px;
+    color: #4682b4;
+    font-weight: bold;
+}
+
+.textstyle {
+
+    font-size: 16px;
+    color: #4682b4;
+}
+
+.xclose {
+    
+    font-size: 18px;
+    color: #4682b4;
+    font-weight: bold;
+    float: right;
+    right: 20px;
+    cursor: pointer;
+}
+
+.space {
+
+    height: 10px;
+}
+
+th {
+
+    height: 35px;
+    border-bottom: 1px solid #000000;
+}
+
+table tr:nth-child(odd) td {
+    background-color: lightgrey;
+    height: 35px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+table tr:nth-child(even) td {
+    background-color: lightslategray;
+    height: 35px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
 }

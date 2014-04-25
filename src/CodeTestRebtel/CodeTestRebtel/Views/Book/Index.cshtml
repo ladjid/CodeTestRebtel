@@ -1,6 +1,15 @@
-﻿<div ng-controller="BookShelfCtrl">
+﻿<div id="bookshelfcontainer" ng-controller="BookShelfCtrl">
+    <div id="logo">
+        Book Administration
+    </div>
+    <div class="space"></div>
+    <div id="middle">
+        <div id="listOfbooks">List of books</div>
+        <div id="filterinput"><input type="text" ng-model="filter" placeholder="Filter"/></div>
+    </div>
+    <div class="space"></div>
     <div>
-        <table class="table table-striped table-condensed table-hover">
+        <table id="booktable">
             <thead>
                 <tr>
                     <th>Title</th>
@@ -14,9 +23,39 @@
                     <td>{{book.Title}}</td>
                     <td>{{book.Author}}</td>
                     <td>{{book.ISBN}}</td>
-                    <td>{{book.LoanedTo}}</td>
+                    <td>{{book.LoanedToName}}</td>
+                    <td ng-show="book.LoanedTo == null" ng-click="showModal(book)"><button type="button" style="height: 30px" class="btn btn-primary">Loan</button></td>
+                    <td ng-show="book.LoanedTo != null" ng-click="return(book)"><button type="button" style="height: 30px" class="btn btn-primary">Return</button></td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <div class="space"></div>
+    <!--Modal-->
+    <div ng-show="modalVisible" id="modalcontainer">
+        <div id="modalbg" ng-click="hideModal()"></div>
+        <div id="modalcontent">
+            <div class="xclose" ng-click="hideModal()">X</div>
+            <div><span class="textstylebold">Book Title:</span>&nbsp;&nbsp;<span class="textstyle">{{booChosen.Title}}</span></div>
+            <div><span class="textstylebold">Book Author:</span>&nbsp;&nbsp;<span class="textstyle">{{booChosen.Author}}</span></div>
+            <div><span class="textstylebold">Book ISBN:</span>&nbsp;&nbsp;<span class="textstyle">{{booChosen.ISBN}}</span></div>
+            <div class="space"></div>
+            <div class="textstyle">Select the person who wants to loan this book</div>
+            <div class="space"></div>
+            <select ng-model="userSelected" ng-options="user.Firstname + ' ' + user.Lastname  for user in users">
+                <option value="">-- select person --</option>
+            </select>
+            <div class="space"></div>
+            <div class="space"></div>
+            <div>
+                <button ng-click="hideModal()" id="buttoncancel" class="btn btn-default">Cancel</button>
+                <button ng-click="loan()" id="buttonsave" class="btn btn-default">Save</button>
+            </div>
+            <br/>
+            <br/>
+            <div ng-show="didNotSelectAnyUser" style="color: red">You didn't choose any person to loan this book to</div>
+        </div>
+    </div>
 </div>
+
+

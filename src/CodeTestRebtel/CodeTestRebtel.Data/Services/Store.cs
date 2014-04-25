@@ -9,13 +9,13 @@ namespace CodeTestRebtel.Data.Services
     public class Store : IStore
     {
         public List<User> Users = new List<User>(); 
-        public List<Book> Books = new List<Book>(); 
+        public List<Book> Books = new List<Book>();
 
         public Store()
         {
             for (var i = 0; i < 10; i++)
             {
-                var user = new User {Id = Guid.NewGuid(), Firstname = "User " + i, Lastname = "User Lastname" + i, BooksBorrowed = new List<Guid>()};
+                var user = new User {Id = Guid.NewGuid(), Firstname = "Surename" + i, Lastname = "Lastname" + i, BooksBorrowed = new List<Guid>()};
                 Users.Add(user);
             }
 
@@ -42,6 +42,7 @@ namespace CodeTestRebtel.Data.Services
         {
             try
             {
+                var bookss = Books;
                 var book = Books.SingleOrDefault(b => b.Id == bookId);
 
                 if (book.LoanedTo != null)
@@ -51,6 +52,7 @@ namespace CodeTestRebtel.Data.Services
 
                 var user = Users.SingleOrDefault(u => u.Id == userId);
                 book.LoanedTo = user.Id;
+                book.LoanedToName = user.Firstname + " " + user.Lastname;
                 user.BooksBorrowed.Add(book.Id);
                 return true;
             }
@@ -73,6 +75,7 @@ namespace CodeTestRebtel.Data.Services
 
                 var user = Users.SingleOrDefault(u => u.Id == userId);
                 book.LoanedTo = null;
+                book.LoanedToName = string.Empty;
                 user.BooksBorrowed.Remove(book.Id);
                 return true;
             }

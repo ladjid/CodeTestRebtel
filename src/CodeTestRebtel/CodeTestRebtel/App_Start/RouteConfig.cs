@@ -15,8 +15,8 @@ namespace CodeTestRebtel
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{bookId}/{userId}",
-                defaults: new { controller = "Book", action = "Index", bookId = UrlParameter.Optional, userId = UrlParameter.Optional }
+                url: "{controller}/{action}/{bookId}/{userId}/{filter}",
+                defaults: new { controller = "Book", action = "Index", bookId = UrlParameter.Optional, userId = UrlParameter.Optional, filter = UrlParameter.Optional }
             );
         }
     }

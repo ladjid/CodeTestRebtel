@@ -33,13 +33,13 @@ namespace CodeTestRebtel.Controllers
             return Content(JsonConvert.SerializeObject(_repository.GetAllUsers()));
         }
 
-        [HttpPost]
+        [HttpGet]
         public ContentResult Loan(Guid bookId, Guid userId)
         {
             return Content(JsonConvert.SerializeObject(_repository.Loan(bookId, userId)));
         }
 
-        [HttpPost]
+        [HttpGet]
         public ContentResult Return(Guid bookId, Guid userId)
         {
             return Content(JsonConvert.SerializeObject(_repository.Return(bookId, userId)));
@@ -49,6 +49,12 @@ namespace CodeTestRebtel.Controllers
         public ContentResult FilterBooks(string filter)
         {
             var books = _repository.GetAllBooks();
+
+            if (string.IsNullOrEmpty(filter))
+            {
+                return Content(JsonConvert.SerializeObject(books));
+            }
+
             var filterBooks = books.Where(f => 
                     f.ISBN.ToLower().Contains(filter) ||
                     f.Title.ToLower().Contains(filter) || 

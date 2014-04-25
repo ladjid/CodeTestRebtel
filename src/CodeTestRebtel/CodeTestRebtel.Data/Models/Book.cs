@@ -14,5 +14,6 @@ namespace CodeTestRebtel.Data.Models
         public string Author { get; set; }
         public string ISBN { get; set; }
         public Guid? LoanedTo { get; set; }
+        public string LoanedToName { get; set; }
     }
 }

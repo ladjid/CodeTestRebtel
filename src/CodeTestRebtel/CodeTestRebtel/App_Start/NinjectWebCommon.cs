@@ -64,8 +64,8 @@ namespace CodeTestRebtel.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IBookShelf>().To<Repository>();
-            kernel.Bind<IStore>().To<Store>();
+            kernel.Bind<IBookShelf>().To<Repository>().InSingletonScope();
+            kernel.Bind<IStore>().To<Store>().InSingletonScope();
         }        
     }
 }
