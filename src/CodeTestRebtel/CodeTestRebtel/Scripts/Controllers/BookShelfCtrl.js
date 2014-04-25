@@ -1,5 +1,5 @@
 ﻿angular.module('BookShelf')
-    .controller('BookShelfCtrl', ['$scope', 'services', '$timeout', function ($scope, services) {
+    .controller('BookShelfCtrl', ['$scope', 'services', function ($scope, services) {
 
         $scope.filter = "";
         $scope.userSelected = null;

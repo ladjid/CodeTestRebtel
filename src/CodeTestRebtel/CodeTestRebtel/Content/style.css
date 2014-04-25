@@ -128,6 +128,16 @@ body {
     height: 10px;
 }
 
+.buttonstyle {
+    
+    position: relative; 
+    top: -2px;
+}
+
+.buttonheight {
+    height: 30px;
+}
+
 th {
 
     height: 35px;
@@ -135,14 +145,14 @@ th {
 }
 
 table tr:nth-child(odd) td {
-    background-color: lightgrey;
+    background-color: white;
     height: 35px;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
 }
 
 table tr:nth-child(even) td {
-    background-color: lightslategray;
+    background-color: ghostwhite;
     height: 35px;
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;

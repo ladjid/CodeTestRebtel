@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuxiliaryMethod\AuxiliaryMethods.cs" />
     <Compile Include="Contracts\IBookShelf.cs" />
     <Compile Include="Contracts\IStore.cs" />
     <Compile Include="Models\Book.cs" />

@@ -24,8 +24,8 @@
                     <td>{{book.Author}}</td>
                     <td>{{book.ISBN}}</td>
                     <td>{{book.LoanedToName}}</td>
-                    <td ng-show="book.LoanedTo == null" ng-click="showModal(book)"><button type="button" style="height: 30px" class="btn btn-primary">Loan</button></td>
-                    <td ng-show="book.LoanedTo != null" ng-click="return(book)"><button type="button" style="height: 30px" class="btn btn-primary">Return</button></td>
+                    <td ng-show="book.LoanedTo == null" ng-click="showModal(book)"><button type="button"  class="btn btn-primary buttonheight"><span class="buttonstyle">Loan</span></button></td>
+                    <td ng-show="book.LoanedTo != null" ng-click="return(book)"><button type="button"  class="btn btn-primary buttonheight"><span class="buttonstyle">Return</span></button></td>
                 </tr>
             </tbody>
         </table>

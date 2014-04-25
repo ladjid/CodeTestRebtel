@@ -51,6 +51,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuxiliaryMethodTest\when_calculating_odd_numbers.cs" />
+    <Compile Include="AuxiliaryMethodTest\when_calculating_odd_numbers_with_start_number_greater_than_end_number.cs" />
+    <Compile Include="AuxiliaryMethodTest\when_determining_the_2_power_with_a_number_that_passes.cs" />
+    <Compile Include="AuxiliaryMethodTest\when_determining_the_2_power_with_a_number_that_fails.cs" />
+    <Compile Include="AuxiliaryMethodTest\when_replicating_with_an_empty_string.cs" />
+    <Compile Include="AuxiliaryMethodTest\when_replicating_string.cs" />
+    <Compile Include="AuxiliaryMethodTest\when_replicating_with_a_count_thats_less_than_or_equal_zero.cs" />
+    <Compile Include="AuxiliaryMethodTest\when_reversing_with_an_empty_string.cs" />
+    <Compile Include="AuxiliaryMethodTest\when_reversing_a_string.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryTest\when_loaning_an_available_book_to_a_user.cs" />
     <Compile Include="RepositoryTest\when_loaning_a_book_that_doesnt_exist.cs" />
@@ -83,7 +92,9 @@
       <Name>CodeTestRebtel.Data</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="RepositoryTest\utils\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
