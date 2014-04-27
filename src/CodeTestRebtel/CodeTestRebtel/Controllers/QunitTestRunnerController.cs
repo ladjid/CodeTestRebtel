@@ -6,14 +6,14 @@ using System.Web.Mvc;
 
 namespace CodeTestRebtel.Controllers
 {
-    public class BookController : Controller
+    public class QunitTestRunnerController : Controller
     {
         //
-        // GET: /Book/
+        // GET: /QunitTestRunner/
 
         public ActionResult Index()
         {
-            ViewBag.PageTitle = "Code Test Rebtel";
+            ViewBag.PageTitle = "QUnit Test Runner";
             return View();
         }
 

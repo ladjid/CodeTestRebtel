@@ -1,4 +1,12 @@
-﻿<div id="bookshelfcontainer" ng-controller="BookShelfCtrl">
+﻿@section scripts{
+
+    @Scripts.Render("~/Scripts/angular.min.js")
+    @Scripts.Render("~/Scripts/Angular-Services/Services.js")
+    @Scripts.Render("~/Scripts/Angular-App/BookShelfApp.js")
+    @Scripts.Render("~/Scripts/Angular-Controllers/BookShelfCtrl.js")
+}
+
+<div id="bookshelfcontainer" ng-controller="BookShelfCtrl">
     <div id="logo">
         Book Administration
     </div>

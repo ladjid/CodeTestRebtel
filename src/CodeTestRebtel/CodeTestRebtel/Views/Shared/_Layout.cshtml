@@ -2,18 +2,17 @@
 <html lang="en" ng-app="BookShelf">
     <head>
         <meta charset="utf-8" />
-        <title>Code Test Rebtel</title>
+        <title>@ViewBag.PageTitle</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         <link href="@Url.Content("~/Content/style.css")" rel="stylesheet" type="text/css" />
+        <link href="@Url.Content("~/Content/qunit-1.14.0.css")" rel="stylesheet" type="text/css" />
         <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" />
-        <script src="@Url.Content("~/Scripts/angular.min.js")" type="text/javascript"></script>
-        <script src="@Url.Content("~/Scripts/Controllers/Services.js")"></script>
-        <script src="@Url.Content("~/Scripts/Controllers/BookShelfApp.js")"></script>
-        <script src="@Url.Content("~/Scripts/Controllers/BookShelfCtrl.js")"></script>
     </head>
     <body>
         <div id="maincontainer">
             @RenderBody()
-        </div</body>
+        </div>
+        @RenderSection("scripts", required: false)
+    </body>
 </html>
