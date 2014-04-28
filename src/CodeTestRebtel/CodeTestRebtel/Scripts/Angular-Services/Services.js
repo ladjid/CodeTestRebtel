@@ -30,7 +30,7 @@
                 });
             },
         
-            filter : function(filter) {
+            filter: function (filter) {
                 return $http.get('BookData/FilterBooks', { params: { filter: filter } }).then(function (data) {
                     return data.data;
                 }, function(data) {

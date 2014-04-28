@@ -42,14 +42,17 @@
             });
         };
 
-        $scope.$watch('filter', function (filter) {
-            services.filter(filter).then(function (data) {
-                $scope.books = data;
+        $scope.setupWatch = function () {
+
+            $scope.$watch('filter', function (filter) {
+                services.filter(filter).then(function(data) {
+                    $scope.books = data;
+                });
             });
-        });
 
+        };
+        
         $scope.showModal = function (bookChosen) {
-
             $scope.modalVisible = true;
             $scope.bookChosen = bookChosen;
         };
@@ -65,5 +68,6 @@
         $scope.Initiate = function () {
             $scope.getAllBooks();
             $scope.getAllUsers();
+            $scope.setupWatch();
         };
 }])

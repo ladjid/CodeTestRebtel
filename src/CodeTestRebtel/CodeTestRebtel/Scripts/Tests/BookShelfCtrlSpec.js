@@ -83,3 +83,21 @@ test('when returning a book', function() {
     equal(books[0].LoanedToName, "", "the LoanedToName param should be empty");
 });
 
+test('when filtering books', function() {
+
+    ctrlScope.filter = "2";
+    var filterBooks = [];
+    for (var i = 0; i < books.length; i++) {
+        
+        if (books[i].Title.indexOf(ctrlScope.filter) != -1) {
+
+            filterBooks.push(books[i]);
+        }
+    }
+    httpBackend.expectGET('BookData/FilterBooks?filter=' + ctrlScope.filter).respond(filterBooks);
+    ctrlScope.setupWatch();
+    ctrlScope.$digest();
+    httpBackend.flush();
+    equal(ctrlScope.books[0].Title, filterBooks[0].Title, "Should return books corresponding to the filter");
+});
+
