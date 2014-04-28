@@ -39,7 +39,7 @@ test("when retrieving all users", function () {
     httpBackend.expectGET('BookData/GetAllUsers').respond(users);
     ctrlScope.getAllUsers();
     httpBackend.flush();
-    notEqual(ctrlScope.users, users, "The length of the user array should be greater than 0");
+    notEqual(ctrlScope.users.length, 0, "The length of the user array should be greater than 0");
 });
 
 test("when loaning a book and all the exception passes", function () {
