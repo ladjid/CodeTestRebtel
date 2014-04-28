@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestRebtel.Client.Tests", "CodeTestRebtel.Client.Tests\CodeTestRebtel.Client.Tests.csproj", "{132FE530-9181-4DBF-A129-4E96CD00406D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestRebtel", "CodeTestRebtel\CodeTestRebtel.csproj", "{BC6C1CAD-4EF1-4958-8CE2-3C3445905D71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeTestRebtel.Data", "CodeTestRebtel.Data\CodeTestRebtel.Data.csproj", "{BEB35664-5122-4176-BE99-E628F73A96BC}"
@@ -15,10 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{132FE530-9181-4DBF-A129-4E96CD00406D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{132FE530-9181-4DBF-A129-4E96CD00406D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{132FE530-9181-4DBF-A129-4E96CD00406D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{132FE530-9181-4DBF-A129-4E96CD00406D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BC6C1CAD-4EF1-4958-8CE2-3C3445905D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BC6C1CAD-4EF1-4958-8CE2-3C3445905D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC6C1CAD-4EF1-4958-8CE2-3C3445905D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
